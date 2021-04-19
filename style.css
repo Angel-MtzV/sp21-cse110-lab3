@@ -1,19 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Teko:wght@300&family=Zen+Dots&display=swap');
+
 body { /* background color and margin */
     background-color: rgba(255, 166, 0, 0.397);
-    margin: 30px 40px 30px 40px 
+    margin: 30px 40px 30px 40px;
+    max-width: 100%;
 }
-p.one {
-    border-style: none solid none none;
+
+@media (width: 360px){
+    header{
+        color: white;
+    }
 }
-header {
-    background-color: rgb(66, 65, 65);
+
+#Top{ /*Attributes for button */
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    border:2px solid white;
+    border-radius: 5px;
+    outline: black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.ToDos {
+    border-style: none none none solid;
+}
+
+header { /*Attributes for header */
+    position: static;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: blanchedalmond;
-    text-shadow: 2px 2px 5px blue;
+    text-shadow: 5px 2px 5px blue;
 }
  
-div.bmodel1{
+div.bmodel1 { /*Attributes for Intro boxmodel */
     width: auto;
     border: 10px solid blueviolet;
     border-radius: 20px;
@@ -22,7 +46,7 @@ div.bmodel1{
     background-color: black;
 }
  
-div.bmodel2{
+div.bmodel2 { /*Attributes for Entries box model */
     width: 175px;
     border: 10px dashed rgb(43, 226, 73);
     padding-top: 0.02in;
@@ -30,19 +54,99 @@ div.bmodel2{
     padding-right: 0.1cm;
     padding-bottom: 1mm;
     margin-top: 5mm;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1em;
+    margin-right: 10vmax;
     margin-bottom: 10px;
 }
-h1 {
+h1, h2, h3 { /*Underlines headers */
     text-decoration: underline;
 }
- 
-h2 {
-    text-decoration: underline;
+
+h3{ /*Increases size of header 3 */
+    font-size: 25px;
+}
+
+a:hover{ /*Attributes for when hovering over link */
+    color: darkgreen;
+}
+
+a:active{ /*Attributes for when holding link */
+    background-color: cyan;
+}
+
+p { /*Attributes for look of paragraphs */
+    display: block;
+}
+
+p:hover.invisible{ /*Attributes for disappearing a line/paragraph */
+    display: none;
 }
  
-h3 {
-    text-decoration: underline;
+.container{ /*Attributes for flexbox */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 2;
 }
- 
+
+div.item-1 { /*Attributes for first entry on grid */
+    grid-column: 1;
+    grid-row: 1;
+  }
+  div.item-2 { /*Attributes for second entry on grid */
+    grid-column: 2;
+    grid-row: 1;
+  }
+  div.item-3 { /*Attributes for third entry on grid */
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  div.container2{ /*Attributes for grid */
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-rows: 200px;
+  }
+
+section.font1 p{ /*font for vent entry */
+    font-family: 'Zen Dots', cursive;
+}
+
+h4.fonta{ /*font for header of vent entry */
+    font-family: 'Zen Dots';
+    font-size: 15px;
+}
+
+h4.fontb{ /*font for header of high/lowlight entry */
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0.5px;
+}
+
+ul.font2 > li{ /*font for high/lowlight entry */
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+section.font3 *{ /*font for first to do list*/
+    font-family: 'Indie Flower', cursive;
+}
+h4.fontc { /*font for header of to do list*/
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+li.font3a + li{ /*font for first li after li in class*/
+    font-family: 'Indie Flower', cursive;
+}
+
+li.font3b ~ li { /*font for li after li in class*/
+    font-family: 'Indie Flower', cursive;
+}
+
+p[class=invisible]{
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 128, 111);
+}

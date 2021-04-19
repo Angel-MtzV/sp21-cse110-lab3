@@ -12,25 +12,30 @@
     </head>
  
     <body>
-        <section>
+        <button type="button" id="Top">Top (WIP)</button>
+ 
+        <div style="background-color: black;">
         <header><h1 style="color: #FF0000;">Angel's Journal Entries</h1></header>
-        </section>
+        </div>
  
         <div class="bmodel1" style="color: white;">
         <h1>Information</h1>
         <p>This web page is where I, Angel, have and will write the to dos of my 
             day, the highlights of a given day and I will use this web page to 
-            vent about the day.</p>
+            vent about the day.</p> 
+            <p><strong>Note: </strong>This is for a lab for CSE 110 during Spring 2021.</p>
         <p>Below are the current entries to this journal.</p>
+        <p class="invisible">Fun activity hover over this line to turn it invisible</p>
         </div>
  
         <section>
         <div class="bmodel2"><h2>Journal Entries</h2>
         <nav>
             <ul>
-                 <li><a href="#4/8">8th of April</a></li>
-                 <li><a href="#4/9">9th of April</a></li>
-                 <li><a href="#4/10">10th of April</a></li>
+                <li><a href="#">Fun Link</a></li>
+                <li><a href="#4/8">8th of April</a></li>
+                <li><a href="#4/9">9th of April</a></li>
+                <li><a href="#4/10">10th of April</a></li>
              </ul>
             </nav>
             </div>
@@ -38,10 +43,10 @@
  
          <hr></hr>
          <main>
-             <section>
-              <h3 id="4/8">8th of April </h3>
-              <h4>To Do</h4>
-              <ul>
+            <h3 id="4/8">8th of April </h3>
+            <section class="font3">
+              <h4 class="fontc">To Do</h4>
+              <ul class="ToDos" class="container">
                 <li><input type="checkbox" checked/> Go to the Volunteering</li>
                 <li><input type="checkbox" checked/> Go to CSE 110 Lecture</li>
                 <li><input type="checkbox" /> CSE 110 lab for week 2</li>
@@ -52,23 +57,23 @@
               </section>
  
               <section>
-                  <h4>Highlights</h4>
-                  <ul>
+                  <h4 class="fontb">Highlights</h4>
+                  <ul class="font2">
                       <li>I got my first dose for the COVID-19 vaccine</li>
                       <li>My theater partner got some great ideas for our scene</li>
                       <li>Finished Modern Family</li>
                   </ul>
  
-                  <h4>Lowlights</h4>
-                  <ul>
+                  <h4 class="fontb">Lowlights</h4>
+                  <ul class="font2">
                       <li>Procrastinated and was unable to start the lab for CSE 110 this week</li>
                       <li>Only was able to get through 3 problems for my MATH 152 HW due tomorrow</li>
                       <li>Have not worked on my TDGE 100 Journal for 2 weeks</li>
                   </ul>
               </section>
  
-              <section>
-                  <h4>Vent Section</h4>
+              <section class="font1">
+                  <h4 class="fonta">Vent Section</h4>
                   <p>Since today was my third day volunteering at the vaccination center in my city I now 
                       qualify for the vaccine. I received my first dose of the vaccine after my shift, 
                       I am excited to having this pandemic behind us. Even though I enjoy volunteering 
@@ -91,37 +96,44 @@
               </section>
  
               <hr></hr>
-              <section>
+ 
                 <h3 id="4/9">9th of April </h3>
-                <h4>To Do</h4>
-                <ul>
-                  <li><input type="checkbox" checked/> Go to TDGE 100 Section</li>
-                  <li><input type="checkbox" checked/> Go to TDAC 110 Lab</li>
-                  <li><input type="checkbox" /> CSE 110 lab for week 2</li>
-                  <li><input type="checkbox" checked/> MATH 152 HW</li>
-                  <li><input type="checkbox" /> TDGE 100 Journal</li>
-                  <li><input type="checkbox" /> TDGE Leader Biography</li>
-                  <li><input type="checkbox" /> Take notes for MATH 152</li>
-                </ul>
-                </section>
-  
-                <section>
-                    <h4>Highlights</h4>
-                    <ul>
-                        <li>Professor approved ideas for scene</li>
-                        <li>Finished my MATH 152 HW</li>
-                        <li>Played Draw Something with my scene partner</li>
-                        <li>scheduled a time for my CSE 110 group to meet</li>
-                    </ul>
-  
-                    <h4>Lowlights</h4>
-                    <ul>
-                        <li>Keep falling behind on TDGE 100</li>
-                    </ul>
-                </section>
-  
-                <section>
-                    <h4>Vent Section</h4>
+                <div class="container2">
+                    <div class="item-1">
+                        <h4 class="fontc">To Do</h4>
+                        <ul class="ToDos">
+                            <li style="font-family: 'Indie Flower', cursive;" class="font3a"><input type="checkbox"/> Take notes for MATH 152</li>
+                            <li class="font3a"><input type="checkbox" checked/> Go to TDAC 110 Lab</li>
+                            <li class="font3a"><input type="checkbox" /> CSE 110 lab for week 2</li>
+                            <li class="font3a"><input type="checkbox" checked/> MATH 152 HW</li>
+                            <li class="font3a"><input type="checkbox" /> TDGE 100 Journal</li>
+                            <li class="font3a"><input type="checkbox" /> TDGE Leader Biography</li>
+                            <li class="font3a"><input type="checkbox" checked/> Go to TDGE 100 Section</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="item-2">
+                        <h4 class="fontb">Highlights</h4>
+                        <ul class="font2">
+                            <li>Professor approved ideas for scene</li>
+                            <li>Finished my MATH 152 HW</li>
+                            <li>Played Draw Something with my scene partner</li>
+                            <li>scheduled a time for my CSE 110 group to meet</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="item-3">
+                        <h4 class="fontb">Lowlights</h4>
+                        <ul class="font2">
+                            <li>Keep falling behind on TDGE 100</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>|</div>
+                <div>|</div>
+
+                <section class="font1">
+                    <h4 class="fonta">Vent Section</h4>
                     <p>
                         During TDAC 110 my scene partner and I played Draw Something to research our
                         characters background for our scene. Since this class starts at the same time as
@@ -129,37 +141,38 @@
                         for the leacture that I missed. I was not able to do this today.
                     </p>
                     <p>
-                        For TDGE 100 we received an assignent for next week. The assignment is to find a 
+                         For TDGE 100 we received an assignent for next week. The assignment is to find a 
                         biography of a leader to read this quarter. With this assigment I continue to fall 
                         behind in this class. Since most of our assigments do not have set deadlines I 
                         prioritize the assignments for my other classes.
                     </p>
                 </section>
                 
+                
                 <hr></hr>
                 <section>
                     <h3 id="4/10">10th of April </h3>
-                    <h4>To Do</h4>
-                    <ul>
-                      <li><input type="checkbox" checked/> Take notes for MATH 152</li>
+                    <h4 class="fontc">To Do</h4>
+                    <ul class="ToDos">
+                      <li style="font-family: 'Indie Flower', cursive;" class="font3b"><input type="checkbox"/> TDGE 100 Journal</li>
                       <li><input type="checkbox" /> CSE 110 lab for week 2</li>
-                      <li><input type="checkbox" /> TDGE 100 Journal</li>
+                      <li><input type="checkbox" checked/> Take notes for MATH 152</li>
                       <li><input type="checkbox" /> TDGE Leader Biography</li>
                       <li><input type="checkbox" checked/> Meet with CSE 110 group</li>
                     </ul>
                     </section>
       
                     <section>
-                        <h4>Highlights</h4>
-                        <ul>
+                        <h4 class="fontb">Highlights</h4>
+                        <ul class="font2">
                             <li>Finished part 1 of my CSE 110 Lab</li>
                             <li>Uncle and his family visited</li>
                             <li>Played scrible.io and a word game with CSE 110 group</li>
                         </ul>
                     </section>
       
-                    <section>
-                        <h4>Vent Section</h4>
+                    <section class="font1">
+                        <h4 class="fonta">Vent Section</h4>
                         <p>
                             With this entry I will have finished part 1 of my CSE 110 lab. I will try to 
                             finish part 2 tonight. This will hopefully free up enough time for tomorrow 
@@ -169,4 +182,7 @@
         </main>
     </body>
 </html>
+ 
+ 
+ 
 
